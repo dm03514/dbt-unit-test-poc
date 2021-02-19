@@ -13,3 +13,23 @@ Try running the following commands:
 - Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+
+```
+$ dbt run --profiles-dir=conf/ --profile=ci
+Running with dbt=0.19.0
+Found 2 models, 4 tests, 0 snapshots, 0 analyses, 138 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+
+14:40:32 | Concurrency: 8 threads (target='ci')
+14:40:32 |
+14:40:32 | 1 of 2 START table model test.my_first_dbt_model..................... [RUN]
+14:40:33 | 1 of 2 OK created table model test.my_first_dbt_model................ [SELECT 2 in 0.10s]
+14:40:33 | 2 of 2 START view model test.my_second_dbt_model..................... [RUN]
+14:40:33 | 2 of 2 OK created view model test.my_second_dbt_model................ [CREATE VIEW in 0.06s]
+14:40:33 |
+14:40:33 | Finished running 1 table model, 1 view model in 0.31s.
+
+Completed successfully
+
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+```
