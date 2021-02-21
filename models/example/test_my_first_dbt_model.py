@@ -1,6 +1,6 @@
 import pandas as pd
 
-from .dbtmodeltests import DBTModelTestCase
+from dbtmodeltest.testcase import DBTModelTestCase
 
 
 class MyFirstDBTModelTestCase(DBTModelTestCase):

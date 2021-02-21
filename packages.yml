@@ -1,0 +1,3 @@
+packages:
+  - git: "https://github.com/dm03514/dbt-model-tests.git"
+    revision: v0.0.1

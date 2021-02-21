@@ -38,5 +38,15 @@ Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 
 
 ```
+# install the dbt-model-tests into your path
+$ git clone git@github.com:dm03514/dbt-model-tests.git
+$ cd dbt-model-tests
+$ python setup.py develop
+
+# install dbt deps to pull in required macros
+$ dbt deps
+
+# Execute tests
 $ python -m unittest models/example/test_my_first_dbt_model.py
+$ DBT_MODEL_TEST_ENABLED=1 DBT_MODEL_TEST_IDENTIFIER_PREFIX="test1_" python -m unittest models/example/test_my_second_dbt_model.py
 ```
