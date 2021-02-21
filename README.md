@@ -33,3 +33,10 @@ Completed successfully
 
 Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
 ```
+
+# Executing Model Tests
+
+
+```
+$ python -m unittest models/example/test_my_first_dbt_model.py
+```

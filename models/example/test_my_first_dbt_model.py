@@ -11,7 +11,7 @@ class MyFirstDBTModelTestCase(DBTModelTestCase):
             (None,)
         ], columns=['id'])
 
-        out_df = self.execute_model_with_results(
+        out_df = self.execute_model(
             model='models/example/my_first_dbt_model.sql',
         )
 
