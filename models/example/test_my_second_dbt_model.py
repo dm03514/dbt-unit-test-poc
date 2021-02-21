@@ -17,7 +17,7 @@ class MyFirstDBTModelTestCase(DBTModelTestCase):
         )
 
         expected_df = pd.DataFrame([
-            (1.0,),
+            (1,),
         ], columns=['id'])
 
         self.assertDFEqual(expected_df, out_df)
